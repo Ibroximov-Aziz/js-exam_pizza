@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+
+body {
+    padding: 0;
+    vertical-align: middle;
+    background-color: #edf3f8;
+    background-image: url(../img/pizza-main_img.jpg);
+    background-repeat: no-repeat;
+    background-size: 411px;
+    background-position: calc(50% + 542px) calc(0% - -95px);
+}
+
+.order-box {
+    max-width: 510px !important;
+    border-left: 1px solid #000;
+}

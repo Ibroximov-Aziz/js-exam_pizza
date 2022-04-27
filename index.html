@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-exam</title>
+    <link rel="icon" href="./img/pizza_icon.png">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <h1 class="visually-hidden">Buy pizza!!!</h1>
+    <div class="container-xl">
+        <h2 class="site-heading mt-2 text-center fw-bold">Order Pizza</h2>
+        <div class="row mt-5">
+            <div class="col-6">
+                <form class="site-form" action="https://echo.htmlacademy.ru" id="form" name="form" method="post">
+                    <fieldset class="pb-5">
+                        <legend class="bread-input fw-bold fs-4">What kind of bread?</legend>
+
+                        <select class="js-select" name="bread-product"></select>
+                    </fieldset>
+
+                    <fieldset class="js-radio mt-5 mb-5 pb-5">
+                        <legend class="js-form fw-bold fs-4">Sizes</legend>
+                    </fieldset>
+
+                    <div class="js-checkbox mt-5 mb-5 pb-5">
+                        <p class="fs-4 fw-bold">What type of thing should we put on top?</p>
+                    </div>
+
+                    <div class="additional-checkbox mt-5">
+                        <p class="fs-4 fw-bold">Additions</p>
+                    </div>
+                </form>
+            </div>
+            <div class="order-box col-6">
+                <output class="ready">
+                    <p class="fs-4 fw-bold">Bread:
+                        <span class="breadText fw-normal fs-5">thin</span>
+                    </p>
+
+                    <p class="fs-4 fw-bold">Size:
+                        <span class="breadsizeText fw-normal fs-5">30sm</span>
+                    </p>
+
+                    <div>
+                        <p class="fs-4 fw-bold">Above:</p>
+                        <ul class="Abovelist"></ul>
+                    </div>
+
+                    <div class="mt-5">
+                        <p class="fs-4 fw-bold">Additions:</p>
+                        <ul class="addlist"></ul>
+                    </div>
+                </output>
+
+                <button class="form-btn btn-danger fs-5 fw-bold d-block mt-5 p-2" type="submit" form="form">Order
+                    Now!</button>
+            </div>
+        </div>
+    </div>
+    <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
